@@ -1,3 +1,11 @@
 package net.stenya.cacheoverflow.minecraftserver.network.protocol.packet
 
-interface IPacket
+import io.netty.buffer.ByteBuf
+
+interface IPacket {
+
+    fun write(buffer: ByteBuf)
+
+    fun read(buffer: ByteBuf)
+
+}

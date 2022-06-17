@@ -33,4 +33,13 @@ object ByteBufUtils {
         return out
     }
 
+    @JvmStatic fun getVarIntSize(var0: Int): Int {
+        for (var1 in 1..4) {
+            if (var0 and (-1 shl var1) * 7 == 0) {
+                return var1
+            }
+        }
+        return 5
+    }
+
 }
