@@ -1,17 +1,11 @@
-package net.stenya.cacheoverflow.minecraftserver.network.protocol.packet.all.status;
+package net.stenya.cacheoverflow.minecraftserver.network.protocol.packet.all.status
 
-import io.netty.buffer.ByteBuf;
-import net.stenya.cacheoverflow.minecraftserver.network.protocol.packet.IPacket;
-import org.jetbrains.annotations.NotNull;
+import io.netty.buffer.ByteBuf
+import net.stenya.cacheoverflow.minecraftserver.network.protocol.packet.IPacket
 
-public class ClientboundStatusResponsePacket implements IPacket {
-    @Override
-    public void write(@NotNull ByteBuf buffer) {
+class ClientboundStatusResponsePacket : IPacket {
 
-    }
+    override fun write(buffer: ByteBuf) {}
+    override fun read(buffer: ByteBuf) {}
 
-    @Override
-    public void read(@NotNull ByteBuf buffer) {
-
-    }
 }
